@@ -21,3 +21,4 @@ vim.keymap.set({ "n", "i" }, "<C-l>", ":noh<CR>") -- Clear search highlighting
 
 -- Git control
 vim.keymap.set("n", "<leader>gh", ":Gitsigns preview_hunk<CR>")
+vim.keymap.set("n", "<leader>gl", ":Gitsigns toggle_current_line_blame<CR>")
