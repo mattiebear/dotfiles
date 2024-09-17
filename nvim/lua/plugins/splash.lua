@@ -19,7 +19,7 @@ return {
 			dashboard.button("u", "󱐥  Update plugins", "<cmd>Lazy update<CR>"),
 			dashboard.button("c", "  Settings", ":e $HOME/.config/nvim/init.lua<CR>"),
 			dashboard.button("p", "  Projects", ":e $HOME/dev <CR>"),
-			dashboard.button("d", "󱗼  Dotfiles", ":e $HOME/.config <CR>"),
+			dashboard.button("d", "󱗼  Dotfiles", ":e $HOME/dotfiles <CR>"),
 			dashboard.button("q", "󰿅  Quit", "<cmd>qa<CR>"),
 		}
 
