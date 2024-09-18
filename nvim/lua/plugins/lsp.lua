@@ -6,7 +6,7 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 		opts = {
-			ensure_installed = { "elixirls", "lua_ls" },
+			ensure_installed = { "elixirls", "lua_ls", "ts_ls" },
 		},
 	},
 	{
@@ -27,6 +27,8 @@ return {
 					},
 				},
 			})
+
+			lspconfig.ts_ls.setup({})
 		end,
 	},
 }
