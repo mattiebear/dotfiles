@@ -18,6 +18,8 @@ return {
 			elixir = { "mix" },
 			eelixir = { "mix" },
 			heex = { "mix" },
+			yml = { "yamlfmt" },
+			yaml = { "yamlfmt" },
 		},
 		default_format_opts = {
 			lsp_format = "fallback",
