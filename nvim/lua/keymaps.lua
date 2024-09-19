@@ -9,8 +9,8 @@ vim.keymap.set("n", "<leader>fb", telescope.buffers, {})
 vim.keymap.set("n", "<leader>fh", telescope.help_tags, {})
 
 -- File browsing
-vim.keymap.set("n", "<leader>n", ":Telescope file_browser<CR>")
-vim.keymap.set("n", "<leader>m", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
+vim.keymap.set("n", "<leader>fn", ":Telescope file_browser<CR>")
+vim.keymap.set("n", "<leader>fm", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
 
 -- LSP commands
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
@@ -24,3 +24,9 @@ vim.keymap.set({ "n", "i" }, "<C-l>", ":noh<CR>") -- Clear search highlighting
 -- Git control
 vim.keymap.set("n", "<leader>gh", ":Gitsigns preview_hunk<CR>")
 vim.keymap.set("n", "<leader>gl", ":Gitsigns toggle_current_line_blame<CR>")
+
+-- Window navigation
+vim.keymap.set("n", "<leader>sl", "<C-W>l<CR>")
+vim.keymap.set("n", "<leader>sk", "<C-W>k<CR>")
+vim.keymap.set("n", "<leader>sj", "<C-W>j<CR>")
+vim.keymap.set("n", "<leader>sh", "<C-W>h<CR>")
