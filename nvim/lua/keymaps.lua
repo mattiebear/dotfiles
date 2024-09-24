@@ -20,6 +20,7 @@ vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 -- Editor commands
 vim.keymap.set("n", "<BS>", "ciw")
 vim.keymap.set({ "n", "i" }, "<C-l>", ":noh<CR>") -- Clear search highlighting
+vim.keymap.set("n", "<leader>ge", ":e#<CR>")
 
 -- Git control
 vim.keymap.set("n", "<leader>gh", ":Gitsigns preview_hunk<CR>")
