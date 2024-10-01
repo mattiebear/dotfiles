@@ -30,4 +30,7 @@ white   = '#acb0d0'
 
 [font]
 normal = { family = "Hack Nerd Font Mono", style = "Regular" }
-size = 12
+size = 15
+
+[window]
+option_as_alt = "OnlyRight"

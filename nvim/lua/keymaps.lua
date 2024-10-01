@@ -16,10 +16,12 @@ vim.keymap.set("n", "<leader>fm", ":Telescope file_browser path=%:p:h select_buf
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, {})
 
 -- Editor commands
 vim.keymap.set("n", "<BS>", "ciw")
 vim.keymap.set({ "n", "i" }, "<C-l>", ":noh<CR>") -- Clear search highlighting
+vim.keymap.set("n", "<leader>ge", ":e#<CR>")
 
 -- Git control
 vim.keymap.set("n", "<leader>gh", ":Gitsigns preview_hunk<CR>")
