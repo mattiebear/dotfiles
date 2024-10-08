@@ -28,7 +28,7 @@ vim.keymap.set("n", "<leader>gh", ":Gitsigns preview_hunk<CR>")
 vim.keymap.set("n", "<leader>gl", ":Gitsigns toggle_current_line_blame<CR>")
 
 -- Window navigation
-vim.keymap.set("n", "<leader>sl", "<C-W>l")
-vim.keymap.set("n", "<leader>sk", "<C-W>k")
-vim.keymap.set("n", "<leader>sj", "<C-W>j")
-vim.keymap.set("n", "<leader>sh", "<C-W>h")
+vim.keymap.set("n", "<leader>ml", "<C-W>l")
+vim.keymap.set("n", "<leader>mk", "<C-W>k")
+vim.keymap.set("n", "<leader>mj", "<C-W>j")
+vim.keymap.set("n", "<leader>mh", "<C-W>h")
