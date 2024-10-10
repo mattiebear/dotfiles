@@ -6,7 +6,7 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 		opts = {
-			ensure_installed = { "elixirls", "lua_ls", "ts_ls" },
+			ensure_installed = { "elixirls", "lua_ls", "rust_analyzer", "ts_ls" },
 		},
 	},
 	{
@@ -29,6 +29,10 @@ return {
 						},
 					},
 				},
+			})
+
+			lspconfig.rust_analyzer.setup({
+				capabilities = capabilities,
 			})
 
 			lspconfig.ts_ls.setup({
