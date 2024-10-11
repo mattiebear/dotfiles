@@ -2,8 +2,24 @@
 {
 	"layer": "top",
 	"position": "top",
-	"modules-left": ["cpu", "memory", "tray", "hyprland/workspaces"],
-	"modules-center": ["clock"]
+	"spacing": 16,
+	"modules-left": ["tray", "hyprland/workspaces"],
+	"modules-center": ["cpu", "memory", "disk"],
+	"modules-right": ["clock", "network", "pulseaudio"],
+	"clock": {
+		"interval": 60,
+		"format": "   {:%A %b %d, %I:%M%p}"
+	},
+	"network": {
+		"interval": 5,
+		"format-wifi": "{icon}   {bandwidthDownBits}",
+		"format-icons": [""]
+	}
+		
+	// TODO: Add custom power to right
+	// TODO: Add custom launcher to left
+	// TODO: Add wallpaper changer to right
+
 	// "layer": "top",
 	// "modules-left": ["custom/launcher","cpu","memory","custom/media","tray"],
 	// "modules-center": ["river/tags"],
@@ -17,17 +33,17 @@
 	// 	"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
 	// 	"format-icons": {
 	// 		"default": ["", "", ""]
-	// 	}
+	// 		"default": ["", "", ""]
 	// },
 	//
- //    "river/tags": {
+
 	// 	"num-tags": 6
  //    },
 	// "network": {
 	// 	"tooltip": false,
 	// 	"format-wifi": "  {essid}",
 	// 	"format-ethernet": ""
-	// },
+// },
 	// "backlight": {
 	// 	"tooltip": false,
 	// 	"format": " {}%",
