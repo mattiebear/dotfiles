@@ -14,6 +14,9 @@
 		"interval": 5,
 		"format-wifi": "{icon}   {bandwidthDownBits}",
 		"format-icons": [""]
+	},
+	"tray": {
+		"spacing": 10
 	}
 		
 	// TODO: Add custom power to right
