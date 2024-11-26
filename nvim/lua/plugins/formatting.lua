@@ -19,6 +19,7 @@ return {
 			elixir = { "mix" },
 			eelixir = { "mix" },
 			heex = { "mix" },
+			svelte = { "prettier" },
 			yml = { "yamlfmt" },
 			yaml = { "yamlfmt" },
 		},

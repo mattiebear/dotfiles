@@ -6,7 +6,7 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 		opts = {
-			ensure_installed = { "elixirls", "lua_ls", "rust_analyzer", "ts_ls" },
+			ensure_installed = { "elixirls", "emmet_language_server", "lua_ls", "rust_analyzer", "ts_ls" },
 		},
 	},
 	{
@@ -18,6 +18,11 @@ return {
 			lspconfig.elixirls.setup({
 				capabilities = capabilities,
 				cmd = { vim.fn.stdpath("data") .. "/mason/packages/elixir-ls/language_server.sh" },
+			})
+
+			lspconfig.emmet_language_server.setup({
+				capabilities = capabilities,
+				filetypes = { "html", "css", "javascript", "typescript", "javascriptreact", "typescriptreact", "heex", "svelte" },
 			})
 
 			lspconfig.lua_ls.setup({
